@@ -1,0 +1,796 @@
+{
+  "concepts": [
+    {
+      "title": "8.1 Describing Motion",
+      "order_index": 1,
+      "subconcepts": [
+        {
+          "title": "Introduction",
+          "order_index": 1,
+          "content": {
+            "theory": [
+              "Motion is all around us — birds fly, fish swim, blood flows through veins, and cars move. We perceive an object to be in motion when its **position changes with time**. Some motions are inferred indirectly; for example, we infer the motion of air by observing the movement of dust particles and the swaying of leaves and branches of trees.",
+              "Motion is **relative**: an object may appear to be moving for one observer and stationary for another. Passengers in a moving bus see roadside trees moving backwards, while a person standing on the roadside sees the bus (and passengers) moving forward. A passenger inside the bus sees fellow passengers at rest. These observations indicate that the state of motion depends on the observer's reference point.",
+              "Most motions are complex. Some objects move in a straight line, others take circular paths, some rotate, and some vibrate. This chapter first describes motion along a straight line through equations and graphs, and later discusses circular motion.",
+              "To describe the location of an object, we specify a **reference point** called the **origin**. For example, 'a school is 2 km north of the railway station' uses the railway station as the reference point. The choice of origin can vary based on convenience."
+            ],
+            "scq": [
+              {
+                "question": "A person sitting inside a moving train observes a tree alongside the track. Which of the following correctly describes the tree's motion?",
+                "options": [
+                  { "text": "The tree is in motion relative to the person in the train.", "is_correct": true },
+                  { "text": "The tree is in motion relative to a person standing near the track.", "is_correct": false },
+                  { "text": "The tree is in motion relative to a bird flying alongside the train at the same speed.", "is_correct": false },
+                  { "text": "The state of motion of the tree is absolute and does not depend on the observer.", "is_correct": false }
+                ],
+                "explanation": "Motion is relative. The tree appears to move backwards relative to the person in the train (who is the moving observer). However, the tree is stationary relative to a person standing near the track, and also stationary relative to a bird flying alongside at the train's speed."
+              },
+              {
+                "question": "A school is located 3 km east of a bus stop. In this description, the reference point (origin) is:",
+                "options": [
+                  { "text": "The school", "is_correct": false },
+                  { "text": "The bus stop", "is_correct": true },
+                  { "text": "The 3 km distance", "is_correct": false },
+                  { "text": "The east direction", "is_correct": false }
+                ],
+                "explanation": "The reference point (origin) is the fixed point from which the position of another object is described. Here the school's position is given relative to the bus stop, so the bus stop is the origin."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "Which of the following are examples where motion is inferred through **indirect** evidence? (Select all that apply)",
+                "options": [
+                  { "text": "A car driving down a street", "is_correct": false },
+                  { "text": "Leaves and branches of trees swaying", "is_correct": true },
+                  { "text": "Dust particles being blown along a road", "is_correct": true },
+                  { "text": "A bird flying across the sky", "is_correct": false }
+                ],
+                "explanation": "We directly perceive the motion of a car or a flying bird. The motion of air (wind), however, is inferred indirectly by observing dust particles being blown and leaves/branches of trees swaying."
+              }
+            ],
+            "saq": [
+              {
+                "question": "Discuss whether the walls of your classroom are at rest or in motion.",
+                "sample_answer": "The walls of the classroom are **at rest** relative to objects inside the classroom and relative to the ground. However, since the Earth itself is rotating on its axis and revolving around the Sun, the walls are actually in **motion** relative to a distant fixed point in space (e.g., the Sun or a distant star). This shows that whether an object is at rest or in motion depends entirely on the chosen reference point — there is no absolute rest or absolute motion."
+              },
+              {
+                "question": "Why do the roadside trees appear to move backwards to passengers in a moving bus, while a person standing on the roadside sees the bus moving?",
+                "sample_answer": "This is due to the **relative nature of motion**. The passenger in the bus uses themselves as the reference point. Relative to the moving passenger, the stationary trees appear to move in the opposite direction (backwards). The person standing on the road uses the ground as the reference point, so they observe the bus and its passengers moving forward. This illustrates that motion is always described relative to an observer or a chosen reference point."
+              }
+            ]
+          }
+        },
+        {
+          "title": "8.1.1 Motion Along a Straight Line",
+          "order_index": 2,
+          "content": {
+            "theory": [
+              "The simplest type of motion is motion along a straight line. Consider an object starting from point O (origin) on a number line. Let A (60 km), B (35 km), and C (25 km) represent its positions at different instants. The object first moves from O through C and B to reach A, then returns along the same path back to C.",
+              "**Distance** is the total path length covered by an object. It is a **scalar quantity** — only its magnitude needs to be stated. For the above example, if the object goes from O to A and back to C: distance = OA + AC = 60 + 35 = **95 km**.",
+              "**Displacement** is the **shortest distance** (straight-line distance) measured from the initial position to the final position of an object. It is a **vector quantity** — both magnitude and direction must be specified. For the same journey (O → A → C): displacement = OC = **25 km** (in the direction of A).",
+              "**Key comparisons:**\n- Distance ≥ |Displacement| always.\n- Displacement can be **zero** even when distance is non-zero (when the object returns to its starting point). For example, if the object goes from O to A and back to O: distance = 120 km, displacement = 0.\n- When motion is along a single straight-line direction without reversal, distance = magnitude of displacement."
+            ],
+            "scq": [
+              {
+                "question": "An object starts from O, travels to A (60 km from O), and then returns to B (which is 35 km from O). What are the total distance covered and the magnitude of displacement?",
+                "options": [
+                  { "text": "Distance = 85 km, Displacement = 35 km", "is_correct": true },
+                  { "text": "Distance = 35 km, Displacement = 85 km", "is_correct": false },
+                  { "text": "Distance = 60 km, Displacement = 35 km", "is_correct": false },
+                  { "text": "Distance = 95 km, Displacement = 25 km", "is_correct": false }
+                ],
+                "explanation": "Distance = OA + AB = 60 + (60 − 35) = 60 + 25 = 85 km. Displacement = magnitude of OB = 35 km (shortest straight-line distance from start O to final position B)."
+              },
+              {
+                "question": "A farmer moves along the boundary of a square field of side 10 m in 40 s. What is the magnitude of displacement of the farmer at the end of 2 minutes 20 seconds from the initial position?",
+                "options": [
+                  { "text": "0 m", "is_correct": false },
+                  { "text": "10 m", "is_correct": false },
+                  { "text": "10√2 m ≈ 14.14 m", "is_correct": true },
+                  { "text": "40 m", "is_correct": false }
+                ],
+                "explanation": "Perimeter = 4 × 10 = 40 m. Time per round = 40 s. Total time = 2 min 20 s = 140 s. Rounds completed = 140 ÷ 40 = 3.5. After 3.5 rounds the farmer is at the corner diagonally opposite to the start. Displacement = diagonal of the square = 10√2 ≈ 14.14 m."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "Which of the following statements about distance and displacement are correct? (Select all that apply)",
+                "options": [
+                  { "text": "The magnitude of displacement is always less than or equal to the distance travelled.", "is_correct": true },
+                  { "text": "Displacement can be zero even if the distance covered is not zero.", "is_correct": true },
+                  { "text": "Distance is a vector quantity that requires both magnitude and direction.", "is_correct": false },
+                  { "text": "If an object moves in a straight line in one direction only, distance equals the magnitude of displacement.", "is_correct": true }
+                ],
+                "explanation": "Distance is a scalar (only magnitude); displacement is a vector. |Displacement| ≤ distance always. Displacement is zero when the object returns to its starting point. Distance = |displacement| only for straight-line, one-direction motion."
+              }
+            ],
+            "saq": [
+              {
+                "question": "An object has moved through a distance. Can it have zero displacement? If yes, support your answer with an example.",
+                "sample_answer": "**Yes**, an object can have zero displacement even after moving through a distance. This occurs when the final position of the object coincides with its initial position. \n\n**Example:** A person walks around a circular track of radius $r$ and returns to the starting point. The distance covered = $2\\pi r$ (the circumference), but the displacement = **0 m**, because the initial and final positions are the same point."
+              },
+              {
+                "question": "Which of the following is true for displacement? (a) It cannot be zero. (b) Its magnitude is greater than the distance travelled by the object.",
+                "sample_answer": "**Neither statement is true.** \n\n**(a)** Displacement **can** be zero. For example, if an object completes a full circle and returns to its starting point, displacement = 0 though distance > 0.\n\n**(b)** The magnitude of displacement is **never greater** than the distance travelled. It is always less than or equal to the distance: |displacement| ≤ distance. Equality holds only when the object moves in a single straight-line direction without any reversal."
+              }
+            ]
+          }
+        },
+        {
+          "title": "8.1.2 Uniform Motion and Non-Uniform Motion",
+          "order_index": 3,
+          "content": {
+            "theory": [
+              "**Uniform Motion:** An object is said to be in uniform motion when it covers **equal distances in equal intervals of time** (where the time intervals are small). Example: an object that travels exactly 5 m every second is in uniform motion.",
+              "**Non-Uniform Motion:** An object is in non-uniform motion when it covers **unequal distances in equal intervals of time**. Its speed varies. Examples: a car moving through a crowded street, a person jogging in a park. Most real-world motion is non-uniform."
+            ],
+            "scq": [
+              {
+                "question": "An object travels 10 m in the 1st second, 10 m in the 2nd second, and 10 m in the 3rd second. The motion of the object is best described as:",
+                "options": [
+                  { "text": "Non-uniform, because it is continuously moving.", "is_correct": false },
+                  { "text": "Uniform, because it covers equal distances in equal time intervals.", "is_correct": true },
+                  { "text": "Uniformly accelerated, because the distance per second is constant.", "is_correct": false },
+                  { "text": "Non-uniform, because the time intervals are only 1 second each.", "is_correct": false }
+                ],
+                "explanation": "Uniform motion is defined by covering equal distances in equal time intervals. Since 10 m is covered each second, the motion is uniform. A constant distance per unit time means zero acceleration, not uniformly accelerated motion."
+              },
+              {
+                "question": "Referring to Table 8.1 of the chapter: Object A covers 10 m every 15 minutes. Object B covers 12 m, then 7 m, then 4 m in successive 15-minute intervals. Which statement is correct?",
+                "options": [
+                  { "text": "Both A and B are in uniform motion.", "is_correct": false },
+                  { "text": "A is in uniform motion; B is in non-uniform motion.", "is_correct": true },
+                  { "text": "A is in non-uniform motion; B is in uniform motion.", "is_correct": false },
+                  { "text": "Both A and B are in non-uniform motion.", "is_correct": false }
+                ],
+                "explanation": "Object A covers equal distances (10 m) in equal time intervals (15 min) → uniform motion. Object B covers unequal distances (12, 7, 4 m) in equal intervals → non-uniform motion."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "Which of the following are examples of **non-uniform** motion? (Select all that apply)",
+                "options": [
+                  { "text": "A car moving through a crowded street, frequently slowing and speeding up", "is_correct": true },
+                  { "text": "A person jogging in a park, changing pace frequently", "is_correct": true },
+                  { "text": "A car on an empty straight highway at a constant speed of 80 km h⁻¹", "is_correct": false },
+                  { "text": "A stone falling freely from rest under gravity (velocity increasing uniformly)", "is_correct": true }
+                ],
+                "explanation": "A car in crowded traffic and a jogger who changes pace cover unequal distances in equal intervals → non-uniform. A car at constant speed on a straight highway → uniform. A freely falling stone has changing velocity (it speeds up), so its distance per unit time is unequal → non-uniform motion (even though its acceleration is uniform)."
+              }
+            ],
+            "saq": [
+              {
+                "question": "What is the difference between uniform motion and non-uniform motion? Give one example of each.",
+                "sample_answer": "**Uniform Motion:** An object is in uniform motion when it covers **equal distances in equal intervals of time** (speed is constant). \n*Example:* A car moving at a steady 60 km h⁻¹ on a straight, empty highway.\n\n**Non-Uniform Motion:** An object is in non-uniform motion when it covers **unequal distances in equal intervals of time** (speed varies). \n*Example:* A car travelling through a city, repeatedly stopping at red lights and accelerating when the lights turn green."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "8.2 Measuring the Rate of Motion",
+      "order_index": 2,
+      "subconcepts": [
+        {
+          "title": "Introduction",
+          "order_index": 1,
+          "content": {
+            "theory": [
+              "Different objects take different amounts of time to cover the same distance — some are fast, some are slow. The rate of motion is measured by **speed**: the distance travelled by an object per unit time.\n$$v = \\frac{s}{t}$$\nwhere $s$ = distance and $t$ = time taken.",
+              "The **SI unit of speed** is metre per second (**m s⁻¹** or m/s). Other common units are cm s⁻¹ and km h⁻¹. Speed is a **scalar quantity** — only magnitude, no direction.",
+              "Since real-world objects often move at varying rates, we use **average speed**: the total distance travelled divided by the total time taken:\n$$\\text{Average speed} = \\frac{\\text{Total distance travelled}}{\\text{Total time taken}}$$",
+              "**Example 8.1:** An object travels 16 m in 4 s, then another 16 m in 2 s. Total distance = 32 m; total time = 6 s. Average speed = 32/6 ≈ **5.33 m s⁻¹**.\n\n**Example 8.2:** A car's odometer reads 2000 km at trip start and 2400 km at trip end. Trip duration = 8 h. Distance covered = 400 km. Average speed = 400 ÷ 8 = **50 km h⁻¹** = 13.9 m s⁻¹."
+            ],
+            "scq": [
+              {
+                "question": "An object travels 16 m in 4 s and then another 16 m in 2 s. What is the average speed of the object?",
+                "options": [
+                  { "text": "4 m s⁻¹", "is_correct": false },
+                  { "text": "8 m s⁻¹", "is_correct": false },
+                  { "text": "5.33 m s⁻¹", "is_correct": true },
+                  { "text": "3 m s⁻¹", "is_correct": false }
+                ],
+                "explanation": "Total distance = 16 + 16 = 32 m. Total time = 4 + 2 = 6 s. Average speed = 32 ÷ 6 = 5.33 m s⁻¹."
+              },
+              {
+                "question": "The odometer of a car reads 2000 km at the start of a trip and 2400 km at the end. If the trip took 8 hours, what is the average speed in km h⁻¹?",
+                "options": [
+                  { "text": "2400 km h⁻¹", "is_correct": false },
+                  { "text": "400 km h⁻¹", "is_correct": false },
+                  { "text": "50 km h⁻¹", "is_correct": true },
+                  { "text": "300 km h⁻¹", "is_correct": false }
+                ],
+                "explanation": "Distance covered = 2400 − 2000 = 400 km. Average speed = 400 km ÷ 8 h = 50 km h⁻¹."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "Which of the following statements about speed are correct? (Select all that apply)",
+                "options": [
+                  { "text": "Speed is a scalar quantity, requiring only magnitude.", "is_correct": true },
+                  { "text": "The SI unit of speed is m s⁻¹.", "is_correct": true },
+                  { "text": "For non-uniform motion, instantaneous speed always equals average speed.", "is_correct": false },
+                  { "text": "Average speed = total distance ÷ total time taken.", "is_correct": true }
+                ],
+                "explanation": "Speed is scalar (magnitude only); SI unit is m s⁻¹. Average speed = total distance / total time. For non-uniform motion, instantaneous speed varies and is generally not equal to average speed."
+              }
+            ],
+            "saq": [
+              {
+                "question": "What does the odometer of an automobile measure?",
+                "sample_answer": "The odometer of an automobile measures the **total distance travelled** by the vehicle. It displays a cumulative reading of the path length covered by the automobile. In problems, the difference between the final and initial odometer readings gives the distance covered for a particular trip."
+              },
+              {
+                "question": "During an experiment, a signal from a spaceship reached the ground station in five minutes. What was the distance of the spaceship from the ground station? The signal travels at the speed of light, 3 × 10⁸ m s⁻¹.",
+                "sample_answer": "Given: $v = 3 \\times 10^8$ m s⁻¹; $t = 5$ min $= 5 \\times 60 = 300$ s.\n\nUsing $s = v \\times t$:\n$$s = 3 \\times 10^8 \\times 300 = 9 \\times 10^{10} \\text{ m}$$\n\nThe spaceship was **9 × 10¹⁰ m** (90 billion metres) from the ground station."
+              }
+            ]
+          }
+        },
+        {
+          "title": "8.2.1 Speed with Direction (Velocity)",
+          "order_index": 2,
+          "content": {
+            "theory": [
+              "**Velocity** is the rate of change of displacement — it specifies both the speed of an object and its direction of motion. Velocity is a **vector quantity**. It can be uniform (constant speed in a fixed direction) or variable (changing speed or direction or both).",
+              "When an object moves along a straight line at variable speed, its **average velocity** is found the same way as average speed, using displacement instead of distance. When velocity changes at a **uniform rate**, average velocity equals the arithmetic mean of initial and final velocities:\n$$v_{av} = \\frac{u + v}{2}$$\nwhere $u$ = initial velocity and $v$ = final velocity.",
+              "Speed and velocity share the same SI unit: **m s⁻¹** (or m/s).",
+              "**Example 8.3:** Usha swims in a 90 m pool, covering 180 m in 1 minute (one end to the other and back). \n- Average speed = total distance / time = 180 / 60 = **3 m s⁻¹**.\n- Displacement = 0 (she returns to starting point).\n- Average velocity = displacement / time = 0 / 60 = **0 m s⁻¹**.\n\nThis illustrates that average speed and average velocity can be very different."
+            ],
+            "scq": [
+              {
+                "question": "Usha swims in a 90 m long pool, covering 180 m in 1 minute by swimming from one end to the other and back. What is her average velocity?",
+                "options": [
+                  { "text": "3 m s⁻¹", "is_correct": false },
+                  { "text": "1.5 m s⁻¹", "is_correct": false },
+                  { "text": "0 m s⁻¹", "is_correct": true },
+                  { "text": "6 m s⁻¹", "is_correct": false }
+                ],
+                "explanation": "Average velocity = displacement / total time. Since Usha returns to her starting point, displacement = 0. Therefore, average velocity = 0 / 60 = 0 m s⁻¹. (Her average speed is 3 m s⁻¹, which is different.)"
+              },
+              {
+                "question": "Under which condition is the magnitude of average velocity of an object equal to its average speed?",
+                "options": [
+                  { "text": "When the object moves in a circular path.", "is_correct": false },
+                  { "text": "When the object moves along a straight line in a single direction without reversal.", "is_correct": true },
+                  { "text": "When the object returns to its starting point.", "is_correct": false },
+                  { "text": "When the object is at rest.", "is_correct": false }
+                ],
+                "explanation": "Average speed = total distance / total time. |Average velocity| = total displacement / total time. These two are equal only when distance = displacement, which happens when the object moves in a straight line without changing direction."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "Which of the following statements correctly distinguish velocity from speed? (Select all that apply)",
+                "options": [
+                  { "text": "Velocity has both magnitude and direction; speed has only magnitude.", "is_correct": true },
+                  { "text": "Average velocity can be zero even when average speed is non-zero.", "is_correct": true },
+                  { "text": "The magnitude of average velocity is always equal to average speed.", "is_correct": false },
+                  { "text": "Velocity is the displacement per unit time.", "is_correct": true }
+                ],
+                "explanation": "Velocity is a vector (magnitude + direction); speed is scalar. Average velocity = displacement/time; average speed = distance/time. When an object returns to its start, displacement = 0 so average velocity = 0, yet average speed is non-zero. They are equal only for straight-line, one-direction motion."
+              }
+            ],
+            "saq": [
+              {
+                "question": "Distinguish between speed and velocity.",
+                "sample_answer": "| | Speed | Velocity |\n|---|---|---|\n| Definition | Distance per unit time | Displacement per unit time |\n| Type | Scalar | Vector |\n| Formula | $v = s/t$ | $v = \\text{displacement}/t$ |\n| Direction | Not required | Required |\n\n**Example:** A car moving at 60 km h⁻¹ has a speed of 60 km h⁻¹, but its velocity is 60 km h⁻¹ towards the north (direction must be stated)."
+              },
+              {
+                "question": "What does the path of an object look like when it is in uniform motion?",
+                "sample_answer": "In uniform motion, an object covers equal distances in equal intervals of time. On a **distance–time graph**, this appears as a **straight line** with a constant positive slope, because distance increases proportionally with time. The steeper the line, the greater the speed."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "8.3 Rate of Change of Velocity",
+      "order_index": 3,
+      "subconcepts": [
+        {
+          "title": "Introduction",
+          "order_index": 1,
+          "content": {
+            "theory": [
+              "In uniform motion along a straight line, velocity remains constant — the change in velocity for any time interval is zero. In **non-uniform motion**, velocity varies with time, so the change in velocity is non-zero.",
+              "**Acceleration** ($a$) is the rate of change of velocity of an object per unit time:\n$$a = \\frac{v - u}{t} \\quad \\text{...(8.3)}$$\nwhere $u$ = initial velocity, $v$ = final velocity, $t$ = time taken. The SI unit of acceleration is **m s⁻²**.",
+              "Acceleration is **positive** when it is in the direction of velocity (object speeds up), and **negative** (called **deceleration** or **retardation**) when it opposes velocity (object slows down).",
+              "**Uniform acceleration:** velocity changes by equal amounts in equal time intervals. Example: a freely falling body, whose velocity increases by ~9.8 m s⁻¹ every second.\n\n**Non-uniform acceleration:** velocity changes by unequal amounts in equal time intervals. Example: a car in city traffic.",
+              "**Example 8.4:** Rahul starts from rest ($u = 0$), reaches $v = 6$ m s⁻¹ in $t = 30$ s.\n$$a = \\frac{6 - 0}{30} = 0.2 \\text{ m s}^{-2}$$\nHe then brakes: $u = 6$ m s⁻¹, $v = 4$ m s⁻¹, $t = 5$ s.\n$$a = \\frac{4 - 6}{5} = -0.4 \\text{ m s}^{-2} \\text{ (retardation)}$$"
+            ],
+            "scq": [
+              {
+                "question": "Starting from rest, Rahul reaches a velocity of 6 m s⁻¹ in 30 s on his bicycle. What is his acceleration?",
+                "options": [
+                  { "text": "6 m s⁻²", "is_correct": false },
+                  { "text": "0.2 m s⁻²", "is_correct": true },
+                  { "text": "0.5 m s⁻²", "is_correct": false },
+                  { "text": "1.2 m s⁻²", "is_correct": false }
+                ],
+                "explanation": "Using $a = (v - u)/t = (6 - 0)/30 = 0.2$ m s⁻²."
+              },
+              {
+                "question": "A bus decreases its speed from 80 km h⁻¹ to 60 km h⁻¹ in 5 s. What is the acceleration of the bus?",
+                "options": [
+                  { "text": "+1.11 m s⁻²", "is_correct": false },
+                  { "text": "−4 m s⁻²", "is_correct": false },
+                  { "text": "−1.11 m s⁻²", "is_correct": true },
+                  { "text": "+4 m s⁻²", "is_correct": false }
+                ],
+                "explanation": "Convert: 80 km h⁻¹ = 22.22 m s⁻¹; 60 km h⁻¹ = 16.67 m s⁻¹. $a = (16.67 − 22.22)/5 = −5.55/5 ≈ −1.11$ m s⁻². The negative sign indicates deceleration (retardation)."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "Which of the following statements about acceleration are correct? (Select all that apply)",
+                "options": [
+                  { "text": "The SI unit of acceleration is m s⁻².", "is_correct": true },
+                  { "text": "Negative acceleration (retardation) means the object is slowing down in the direction of motion.", "is_correct": true },
+                  { "text": "An object moving in a circular path at constant speed has zero acceleration.", "is_correct": false },
+                  { "text": "A freely falling body near Earth's surface has uniform acceleration.", "is_correct": true }
+                ],
+                "explanation": "SI unit is m s⁻². Retardation = negative acceleration (slowing). An object in circular motion constantly changes direction, so velocity changes → non-zero acceleration (centripetal). A freely falling body has constant acceleration g ≈ 9.8 m s⁻² → uniform acceleration."
+              }
+            ],
+            "saq": [
+              {
+                "question": "When will you say a body is in (i) uniform acceleration? (ii) non-uniform acceleration?",
+                "sample_answer": "**(i) Uniform acceleration:** A body has uniform acceleration when its velocity changes by **equal amounts in equal intervals of time**. \n*Example:* A freely falling body near Earth's surface gains approximately 9.8 m s⁻¹ of velocity every second.\n\n**(ii) Non-uniform acceleration:** A body has non-uniform acceleration when its velocity changes by **unequal amounts in equal intervals of time**. \n*Example:* A car in city traffic that speeds up and slows down irregularly."
+              },
+              {
+                "question": "A train starting from a railway station and moving with uniform acceleration attains a speed of 40 km h⁻¹ in 10 minutes. Find its acceleration.",
+                "sample_answer": "Given: $u = 0$ (starts from rest); $v = 40$ km h⁻¹ $= \\frac{40 \\times 1000}{3600} = \\frac{100}{9}$ m s⁻¹; $t = 10$ min $= 600$ s.\n\n$$a = \\frac{v - u}{t} = \\frac{100/9}{600} = \\frac{100}{5400} \\approx 0.0185 \\text{ m s}^{-2}$$\n\nThe acceleration of the train is approximately **0.019 m s⁻²**."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "8.4 Graphical Representation of Motion",
+      "order_index": 4,
+      "subconcepts": [
+        {
+          "title": "Introduction",
+          "order_index": 1,
+          "content": {
+            "theory": [
+              "Graphs provide a convenient method to present information about motion. **Line graphs** show how one physical quantity (such as distance or velocity) depends on another (such as time). Two primary motion graphs are used: the **distance–time graph** and the **velocity–time graph**.",
+              "In both graphs, time is plotted on the **x-axis** (horizontal) because it is the independent variable. Distance or velocity is plotted on the **y-axis** (vertical)."
+            ],
+            "scq": [
+              {
+                "question": "In a distance–time graph, which physical quantity is plotted along the x-axis?",
+                "options": [
+                  { "text": "Distance", "is_correct": false },
+                  { "text": "Velocity", "is_correct": false },
+                  { "text": "Time", "is_correct": true },
+                  { "text": "Acceleration", "is_correct": false }
+                ],
+                "explanation": "In a distance–time graph, time is the independent variable and is plotted on the x-axis. Distance is the dependent variable and is plotted on the y-axis."
+              },
+              {
+                "question": "What type of graph is primarily used to describe the motion of an object?",
+                "options": [
+                  { "text": "Bar graph", "is_correct": false },
+                  { "text": "Pie chart", "is_correct": false },
+                  { "text": "Line graph", "is_correct": true },
+                  { "text": "Histogram", "is_correct": false }
+                ],
+                "explanation": "Line graphs are used for motion because they show how one physical quantity (distance or velocity) varies continuously with another (time). They can represent uniform, non-uniform, or accelerated motion."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "Which of the following can be determined from motion graphs? (Select all that apply)",
+                "options": [
+                  { "text": "Speed, from the slope of a distance–time graph", "is_correct": true },
+                  { "text": "Displacement, from the area under a velocity–time graph", "is_correct": true },
+                  { "text": "Acceleration, from the slope of a velocity–time graph", "is_correct": true },
+                  { "text": "Mass of the object, from the area under a distance–time graph", "is_correct": false }
+                ],
+                "explanation": "Slope of d–t graph = speed; area under v–t graph = displacement; slope of v–t graph = acceleration. Mass is not related to area under a d–t graph."
+              }
+            ],
+            "saq": [
+              {
+                "question": "Why are graphs useful in describing the motion of objects?",
+                "sample_answer": "Graphs are useful because they visually represent how one quantity changes with another. In motion studies: (1) a **distance–time graph** shows how position changes with time, and its slope gives speed; (2) a **velocity–time graph** shows how velocity changes with time, its slope gives acceleration, and the area under it gives displacement. Graphs also make it easy to compare uniform and non-uniform motion at a glance — a straight line indicates constant speed/acceleration, while a curve indicates variation."
+              }
+            ]
+          }
+        },
+        {
+          "title": "8.4.1 Distance–Time Graphs",
+          "order_index": 2,
+          "content": {
+            "theory": [
+              "The **distance–time graph** plots distance (y-axis) against time (x-axis). It can represent different types of motion:\n\n- **Uniform speed:** distance ∝ time → graph is a **straight line** with positive, constant slope. The slope gives the speed:\n$$v = \\frac{s_2 - s_1}{t_2 - t_1}$$\n- **Object at rest:** distance does not change → **horizontal line** (slope = 0).\n- **Non-uniform (accelerated) speed:** distance changes at a varying rate → **curved (non-linear) graph**.",
+              "From Table 8.2 (distance of a car at 2-second intervals: 0, 1, 4, 9, 16, 25, 36 m), the distances increase as the square of time, producing a **parabolic curve** — characteristic of uniformly accelerated motion."
+            ],
+            "scq": [
+              {
+                "question": "What is the nature of the distance–time graph for an object moving with **uniform** speed?",
+                "options": [
+                  { "text": "A curved parabola", "is_correct": false },
+                  { "text": "A horizontal straight line parallel to the time axis", "is_correct": false },
+                  { "text": "A straight line with a constant positive slope", "is_correct": true },
+                  { "text": "A vertical straight line", "is_correct": false }
+                ],
+                "explanation": "For uniform speed, distance ∝ time, so the d–t graph is a straight line with a constant positive slope. The slope of this line equals the speed of the object."
+              },
+              {
+                "question": "What does a horizontal straight line parallel to the time axis on a distance–time graph indicate?",
+                "options": [
+                  { "text": "The object is accelerating uniformly.", "is_correct": false },
+                  { "text": "The object is moving at uniform speed.", "is_correct": false },
+                  { "text": "The object is at rest.", "is_correct": true },
+                  { "text": "The object is decelerating.", "is_correct": false }
+                ],
+                "explanation": "A horizontal line on a d–t graph means the distance from the reference point is not changing with time — the object is stationary (at rest). Its speed is zero (zero slope)."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "From the distance–time graph of an object, which of the following can be determined? (Select all that apply)",
+                "options": [
+                  { "text": "Whether the object is at rest or in motion", "is_correct": true },
+                  { "text": "The speed of the object at any instant", "is_correct": true },
+                  { "text": "Whether the motion is uniform or non-uniform", "is_correct": true },
+                  { "text": "The mass of the moving object", "is_correct": false }
+                ],
+                "explanation": "The d–t graph reveals: rest vs motion (slope = 0 vs > 0), speed (slope of the line), and type of motion (straight line = uniform, curve = non-uniform). Mass cannot be deduced from a d–t graph."
+              }
+            ],
+            "saq": [
+              {
+                "question": "What is the nature of the distance–time graphs for uniform and non-uniform motion of an object?",
+                "sample_answer": "**Uniform motion:** The d–t graph is a **straight line** with a constant positive slope. Equal distances are covered in equal time intervals, so distance increases proportionally with time.\n\n**Non-uniform motion:** The d–t graph is a **curve** (non-linear). The slope changes at different points, reflecting the varying speed — a steeper section indicates higher speed and a flatter section indicates lower speed."
+              },
+              {
+                "question": "What can you say about the motion of an object whose distance–time graph is a straight line parallel to the time axis?",
+                "sample_answer": "A d–t graph that is a straight line **parallel to the time axis** means the distance of the object from its reference point is **not changing** with time. This indicates that the object is **at rest** — it has zero speed and zero displacement over that time interval."
+              }
+            ]
+          }
+        },
+        {
+          "title": "8.4.2 Velocity–Time Graphs",
+          "order_index": 3,
+          "content": {
+            "theory": [
+              "A **velocity–time graph** plots velocity (y-axis) against time (x-axis). It reveals three key types of motion:\n- **Uniform velocity:** velocity constant → **horizontal straight line** (parallel to time axis).\n- **Uniform acceleration:** velocity changes by equal amounts in equal time → **straight line with positive slope**.\n- **Non-uniform acceleration:** velocity changes unevenly → **curved line**.",
+              "The **slope** of the velocity–time graph gives the **acceleration**:\n$$a = \\frac{\\Delta v}{\\Delta t}$$",
+              "The **area under the velocity–time graph** (between the graph and the time axis) gives the **displacement** of the object during that time interval. \n- For uniform velocity: area = rectangle = $v \\times t$.\n- For uniform acceleration: area = trapezoid (rectangle + triangle):\n$$s = AB \\times BC + \\frac{1}{2}(AD \\times DE)$$",
+              "From Table 8.3 (a car's velocity increases by 2.5 m s⁻¹ every 5 seconds: 0, 2.5, 5.0, 7.5, 10.0, 12.5, 15.0 m s⁻¹), the v–t graph is a straight line through the origin — confirming **uniform acceleration**."
+            ],
+            "scq": [
+              {
+                "question": "For a car moving with **uniform acceleration**, the velocity–time graph will be:",
+                "options": [
+                  { "text": "A horizontal line parallel to the time axis", "is_correct": false },
+                  { "text": "A curved non-linear graph", "is_correct": false },
+                  { "text": "A straight line with a constant positive slope", "is_correct": true },
+                  { "text": "A vertical straight line", "is_correct": false }
+                ],
+                "explanation": "Uniform acceleration means velocity changes by equal amounts in equal time intervals. On a v–t graph, this produces a straight line with a constant slope equal to the acceleration."
+              },
+              {
+                "question": "What physical quantity is measured by the area under the velocity–time graph?",
+                "options": [
+                  { "text": "Acceleration", "is_correct": false },
+                  { "text": "Speed", "is_correct": false },
+                  { "text": "Distance (magnitude of displacement)", "is_correct": true },
+                  { "text": "Force", "is_correct": false }
+                ],
+                "explanation": "The area enclosed between the v–t graph and the time axis represents the displacement (distance travelled) by the object during that time interval, because displacement = velocity × time geometrically."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "Which of the following statements about velocity–time graphs are correct? (Select all that apply)",
+                "options": [
+                  { "text": "A straight line parallel to the time axis represents uniform velocity.", "is_correct": true },
+                  { "text": "The slope of the v–t graph gives the acceleration of the object.", "is_correct": true },
+                  { "text": "The area under the v–t graph gives the distance or displacement.", "is_correct": true },
+                  { "text": "A curved v–t graph represents uniform acceleration.", "is_correct": false }
+                ],
+                "explanation": "Horizontal v–t graph → uniform velocity. Slope of v–t → acceleration. Area under v–t → displacement. A curved v–t graph represents **non-uniform** acceleration; uniform acceleration produces a straight sloped line."
+              }
+            ],
+            "saq": [
+              {
+                "question": "What can you say about the motion of an object if its speed-time graph is a straight line parallel to the time axis?",
+                "sample_answer": "A speed–time graph that is a straight line parallel to the time axis means the speed of the object is **constant** (unchanging) over that time interval. This indicates:\n1. The object is in **uniform motion** — it moves at a constant speed.\n2. The **acceleration is zero** — there is no change in velocity.\n3. For straight-line motion, the distance covered per unit time is constant."
+              },
+              {
+                "question": "What is the quantity measured by the area occupied below the velocity–time graph?",
+                "sample_answer": "The area under the velocity–time graph (between the graph and the time axis) represents the **displacement** of the object during the corresponding time interval. This is because displacement = velocity × time (for constant velocity), and for variable velocity, the integral of velocity over time gives displacement — which is geometrically the area under the v–t curve."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "8.5 Equations of Motion by Graphical Method",
+      "order_index": 5,
+      "subconcepts": [
+        {
+          "title": "Introduction",
+          "order_index": 1,
+          "content": {
+            "theory": [
+              "For an object moving along a **straight line with uniform acceleration**, its velocity, acceleration, and displacement are related by three **equations of motion**:\n$$v = u + at \\quad \\text{...(8.5)}$$\n$$s = ut + \\frac{1}{2}at^2 \\quad \\text{...(8.6)}$$\n$$2as = v^2 - u^2 \\quad \\text{...(8.7)}$$\nwhere $u$ = initial velocity, $v$ = final velocity, $a$ = uniform acceleration, $t$ = time elapsed, $s$ = distance covered in time $t$.",
+              "Each equation eliminates one of the five variables: Eq. (8.5) relates $v$, $u$, $a$, $t$ (no $s$); Eq. (8.6) relates $s$, $u$, $a$, $t$ (no $v$); Eq. (8.7) relates $v$, $u$, $a$, $s$ (no $t$). All three can be derived from the velocity–time graph."
+            ],
+            "scq": [
+              {
+                "question": "Which of the following is **NOT** one of the three standard equations of motion for uniform acceleration?",
+                "options": [
+                  { "text": "$v = u + at$", "is_correct": false },
+                  { "text": "$s = ut + \\frac{1}{2}at^2$", "is_correct": false },
+                  { "text": "$2as = v^2 - u^2$", "is_correct": false },
+                  { "text": "$s = \\frac{1}{2}(v + u) \\cdot t^2$", "is_correct": true }
+                ],
+                "explanation": "The three equations are $v = u+at$, $s = ut + \\frac{1}{2}at^2$, and $2as = v^2 - u^2$. The fourth option, $s = \\frac{1}{2}(v+u)t^2$, is incorrect (the correct form is $s = \\frac{(u+v)}{2} \\cdot t$, which is the average velocity relation)."
+              },
+              {
+                "question": "A bus starts from rest and moves with uniform acceleration of 0.1 m s⁻² for 2 minutes. What speed does it acquire?",
+                "options": [
+                  { "text": "0.2 m s⁻¹", "is_correct": false },
+                  { "text": "12 m s⁻¹", "is_correct": true },
+                  { "text": "6 m s⁻¹", "is_correct": false },
+                  { "text": "120 m s⁻¹", "is_correct": false }
+                ],
+                "explanation": "Using $v = u + at$: $u = 0$, $a = 0.1$ m s⁻², $t = 2 \\times 60 = 120$ s. $v = 0 + 0.1 \\times 120 = 12$ m s⁻¹."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "Which conditions must be satisfied for the equations of motion to be directly applicable? (Select all that apply)",
+                "options": [
+                  { "text": "The object must move along a straight line.", "is_correct": true },
+                  { "text": "The acceleration must be uniform (constant).", "is_correct": true },
+                  { "text": "The object must start from rest ($u = 0$).", "is_correct": false },
+                  { "text": "The motion must be in one dimension.", "is_correct": true }
+                ],
+                "explanation": "The equations of motion apply to straight-line (1D) motion with constant acceleration. The initial velocity $u$ can be any value — it does not need to be zero."
+              }
+            ],
+            "saq": [
+              {
+                "question": "A bus starting from rest moves with a uniform acceleration of 0.1 m s⁻² for 2 minutes. Find (a) the speed acquired, (b) the distance travelled.",
+                "sample_answer": "Given: $u = 0$, $a = 0.1$ m s⁻², $t = 120$ s.\n\n**(a)** $v = u + at = 0 + 0.1 \\times 120 = \\mathbf{12}$ **m s⁻¹**\n\n**(b)** $s = ut + \\frac{1}{2}at^2 = 0 + \\frac{1}{2} \\times 0.1 \\times 14400 = \\mathbf{720}$ **m**"
+              }
+            ]
+          }
+        },
+        {
+          "title": "8.5.1 Equation for Velocity–Time Relation",
+          "order_index": 2,
+          "content": {
+            "theory": [
+              "From the velocity–time graph (Fig. 8.8), an object with initial velocity $u$ (at point A on y-axis) accelerates uniformly to final velocity $v$ (at point B) in time $t$ (along x-axis to point C).\n\nFrom the graph geometry:\n$$BC = BD + DC = BD + OA$$\nSince $BC = v$ and $OA = u$: $\\quad BD = v - u \\quad \\text{...(8.8)}$\n\nAcceleration = slope of v–t graph:\n$$a = \\frac{BD}{AD} = \\frac{BD}{OC} \\Rightarrow BD = at \\quad \\text{...(8.9)}$$\n\nSubstituting (8.8) and (8.9):\n$$\\boxed{v = u + at}$$"
+            ],
+            "scq": [
+              {
+                "question": "A train starts from rest and attains a velocity of 72 km h⁻¹ in 5 minutes with uniform acceleration. What is its acceleration?",
+                "options": [
+                  { "text": "$\\frac{1}{10}$ m s⁻²", "is_correct": false },
+                  { "text": "$\\frac{1}{15}$ m s⁻²", "is_correct": true },
+                  { "text": "$\\frac{1}{20}$ m s⁻²", "is_correct": false },
+                  { "text": "$\\frac{1}{5}$ m s⁻²", "is_correct": false }
+                ],
+                "explanation": "$u = 0$; $v = 72$ km h⁻¹ $= 20$ m s⁻¹; $t = 5 \\times 60 = 300$ s. $a = (v-u)/t = 20/300 = 1/15$ m s⁻²."
+              },
+              {
+                "question": "A car accelerates uniformly from 18 km h⁻¹ to 36 km h⁻¹ in 5 s. What is the acceleration?",
+                "options": [
+                  { "text": "3.6 m s⁻²", "is_correct": false },
+                  { "text": "2 m s⁻²", "is_correct": false },
+                  { "text": "1 m s⁻²", "is_correct": true },
+                  { "text": "0.5 m s⁻²", "is_correct": false }
+                ],
+                "explanation": "$u = 18$ km h⁻¹ $= 5$ m s⁻¹; $v = 36$ km h⁻¹ $= 10$ m s⁻¹; $t = 5$ s. $a = (10-5)/5 = 1$ m s⁻²."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "In deriving $v = u + at$ graphically, which of the following are correct? (Select all that apply)",
+                "options": [
+                  { "text": "The slope of the v–t graph equals the acceleration $a$.", "is_correct": true },
+                  { "text": "The change in velocity is represented by $BD = v - u$.", "is_correct": true },
+                  { "text": "The time interval $t$ is represented by $OC$ on the graph.", "is_correct": true },
+                  { "text": "The area under the graph gives the acceleration.", "is_correct": false }
+                ],
+                "explanation": "Slope = $a$; $BD = v - u = at$; $OC = t$. The area under the v–t graph gives **displacement**, not acceleration."
+              }
+            ],
+            "saq": [
+              {
+                "question": "A train starting from rest attains a velocity of 72 km h⁻¹ in 5 minutes. Assuming uniform acceleration, find (i) the acceleration and (ii) the distance travelled by the train to attain this velocity.",
+                "sample_answer": "Given: $u = 0$; $v = 72$ km h⁻¹ $= 20$ m s⁻¹; $t = 300$ s.\n\n**(i)** $a = \\frac{v - u}{t} = \\frac{20}{300} = \\frac{1}{15}$ m s⁻² $\\approx 0.067$ m s⁻²\n\n**(ii)** Using $2as = v^2 - u^2$:\n$$s = \\frac{v^2}{2a} = \\frac{400}{2 \\times (1/15)} = \\frac{400 \\times 15}{2} = 3000 \\text{ m} = \\mathbf{3 \\text{ km}}$$"
+              }
+            ]
+          }
+        },
+        {
+          "title": "8.5.2 Equation for Position–Time Relation",
+          "order_index": 3,
+          "content": {
+            "theory": [
+              "From the velocity–time graph (Fig. 8.8), the distance $s$ covered in time $t$ under uniform acceleration $a$ equals the area of trapezoid OABC:\n$$s = \\text{area of rectangle OADC} + \\text{area of triangle ABD}$$\n$$s = OA \\times OC + \\frac{1}{2}(AD \\times BD)$$\nSubstituting $OA = u$, $OC = AD = t$, $BD = at$:\n$$s = u \\cdot t + \\frac{1}{2}(t \\times at)$$\n$$\\boxed{s = ut + \\frac{1}{2}at^2}$$\nThe term $ut$ = distance due to initial velocity; the term $\\frac{1}{2}at^2$ = extra distance due to acceleration."
+            ],
+            "scq": [
+              {
+                "question": "A car accelerates uniformly from 18 km h⁻¹ to 36 km h⁻¹ in 5 s. What is the distance covered?",
+                "options": [
+                  { "text": "25 m", "is_correct": false },
+                  { "text": "50 m", "is_correct": false },
+                  { "text": "37.5 m", "is_correct": true },
+                  { "text": "12.5 m", "is_correct": false }
+                ],
+                "explanation": "$u = 5$ m s⁻¹, $a = 1$ m s⁻², $t = 5$ s. $s = 5 \\times 5 + \\frac{1}{2} \\times 1 \\times 25 = 25 + 12.5 = 37.5$ m."
+              },
+              {
+                "question": "A car's brakes produce an acceleration of −6 m s⁻². The car stops in 2 s after brakes are applied. What distance does it travel before stopping?",
+                "options": [
+                  { "text": "6 m", "is_correct": false },
+                  { "text": "24 m", "is_correct": false },
+                  { "text": "12 m", "is_correct": true },
+                  { "text": "18 m", "is_correct": false }
+                ],
+                "explanation": "First find $u$: $0 = u + (-6)(2) \\Rightarrow u = 12$ m s⁻¹. Then $s = 12 \\times 2 + \\frac{1}{2}(-6)(4) = 24 - 12 = 12$ m."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "Which of the following statements about $s = ut + \\frac{1}{2}at^2$ are correct? (Select all that apply)",
+                "options": [
+                  { "text": "It gives the position–time relation for uniformly accelerated motion.", "is_correct": true },
+                  { "text": "When $u = 0$, the equation reduces to $s = \\frac{1}{2}at^2$.", "is_correct": true },
+                  { "text": "The term $ut$ represents the distance contributed by the initial velocity.", "is_correct": true },
+                  { "text": "This equation is valid for non-uniform acceleration.", "is_correct": false }
+                ],
+                "explanation": "The equation is derived for uniform acceleration only. $ut$ = initial-velocity contribution; $\\frac{1}{2}at^2$ = acceleration contribution. When $u = 0$, $s = \\frac{1}{2}at^2$. It cannot be used for non-uniform acceleration."
+              }
+            ],
+            "saq": [
+              {
+                "question": "A motorboat starting from rest on a lake accelerates in a straight line at a constant rate of 3.0 m s⁻² for 8.0 s. How far does the boat travel during this time?",
+                "sample_answer": "Given: $u = 0$, $a = 3.0$ m s⁻², $t = 8.0$ s.\n\nUsing $s = ut + \\frac{1}{2}at^2$:\n$$s = 0 + \\frac{1}{2} \\times 3.0 \\times (8.0)^2 = 1.5 \\times 64 = \\mathbf{96 \\text{ m}}$$"
+              },
+              {
+                "question": "A train is travelling at 90 km h⁻¹. Brakes are applied to produce a uniform acceleration of −0.5 m s⁻². Find how far the train will go before it is brought to rest.",
+                "sample_answer": "Given: $u = 90$ km h⁻¹ $= 25$ m s⁻¹; $v = 0$; $a = -0.5$ m s⁻².\n\nUsing $2as = v^2 - u^2$:\n$$2 \\times (-0.5) \\times s = 0 - 625 \\Rightarrow s = \\frac{625}{1} = \\mathbf{625 \\text{ m}}$$"
+              }
+            ]
+          }
+        },
+        {
+          "title": "8.5.3 Equation for Position–Velocity Relation",
+          "order_index": 4,
+          "content": {
+            "theory": [
+              "From the velocity–time graph, distance $s$ = area of trapezoid OABC:\n$$s = \\frac{(OA + BC) \\times OC}{2} = \\frac{(u + v) \\cdot t}{2} \\quad \\text{...(8.11)}$$\n\nFrom the first equation of motion: $t = \\frac{v - u}{a} \\quad \\text{...(8.12)}$\n\nSubstituting (8.12) into (8.11):\n$$s = \\frac{(v + u)(v - u)}{2a}$$\n$$\\boxed{2as = v^2 - u^2}$$\n\nThis equation is useful when time $t$ is not known."
+            ],
+            "scq": [
+              {
+                "question": "A ball is gently dropped from a height of 20 m. If its velocity increases uniformly at 10 m s⁻², with what velocity will it strike the ground?",
+                "options": [
+                  { "text": "10 m s⁻¹", "is_correct": false },
+                  { "text": "20 m s⁻¹", "is_correct": true },
+                  { "text": "40 m s⁻¹", "is_correct": false },
+                  { "text": "200 m s⁻¹", "is_correct": false }
+                ],
+                "explanation": "Using $2as = v^2 - u^2$: $u = 0$, $a = 10$ m s⁻², $s = 20$ m. $v^2 = 2 \\times 10 \\times 20 = 400 \\Rightarrow v = 20$ m s⁻¹."
+              },
+              {
+                "question": "A stone is thrown vertically upward with 5 m s⁻¹. Acceleration is 10 m s⁻² downward. What maximum height does it reach?",
+                "options": [
+                  { "text": "2.5 m", "is_correct": false },
+                  { "text": "1.25 m", "is_correct": true },
+                  { "text": "0.5 m", "is_correct": false },
+                  { "text": "5 m", "is_correct": false }
+                ],
+                "explanation": "At maximum height, $v = 0$. Using $2as = v^2 - u^2$: $u = 5$ m s⁻¹, $a = -10$ m s⁻², $v = 0$. $-20s = -25 \\Rightarrow s = 1.25$ m."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "Which of the following are correct about $2as = v^2 - u^2$? (Select all that apply)",
+                "options": [
+                  { "text": "It is derived by eliminating $t$ from the first two equations of motion.", "is_correct": true },
+                  { "text": "When $u = 0$, it reduces to $v^2 = 2as$.", "is_correct": true },
+                  { "text": "It relates velocity and displacement for uniform acceleration.", "is_correct": true },
+                  { "text": "It gives distance as an explicit function of time.", "is_correct": false }
+                ],
+                "explanation": "$2as = v^2 - u^2$ is obtained by eliminating $t$ from $v = u+at$ and $s = ut + \\frac{1}{2}at^2$. When $u = 0$, $v^2 = 2as$. It connects velocity and displacement — not distance and time."
+              }
+            ],
+            "saq": [
+              {
+                "question": "A stone is thrown vertically upward with a velocity of 5 m s⁻¹. If the acceleration during motion is 10 m s⁻² in the downward direction, what will be the height attained by the stone and how much time will it take to reach there?",
+                "sample_answer": "Given: $u = 5$ m s⁻¹ (upward), $a = -10$ m s⁻², at peak $v = 0$.\n\n**(i) Height:** Using $2as = v^2 - u^2$:\n$$2(-10)s = 0 - 25 \\Rightarrow s = \\frac{25}{20} = \\mathbf{1.25 \\text{ m}}$$\n\n**(ii) Time:** Using $v = u + at$:\n$$0 = 5 - 10t \\Rightarrow t = \\mathbf{0.5 \\text{ s}}$$"
+              },
+              {
+                "question": "A racing car has a uniform acceleration of 4 m s⁻². What distance will it cover in 10 s after the start?",
+                "sample_answer": "Given: $u = 0$, $a = 4$ m s⁻², $t = 10$ s.\n\nUsing $s = ut + \\frac{1}{2}at^2$:\n$$s = 0 + \\frac{1}{2} \\times 4 \\times 100 = \\mathbf{200 \\text{ m}}$$"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "8.6 Uniform Circular Motion",
+      "order_index": 6,
+      "subconcepts": [
+        {
+          "title": "Introduction",
+          "order_index": 1,
+          "content": {
+            "theory": [
+              "When an object moves in a **circular path with uniform speed**, the magnitude of its velocity is constant but its **direction changes continuously** at every point. Since velocity (a vector) is changing, the object is undergoing **acceleration** — even though its speed is constant. This is called **centripetal acceleration**. Therefore, uniform circular motion is an example of **accelerated motion**.",
+              "Visualise an athlete running around polygonal tracks: 4-sided (square), 6-sided (hexagon), 8-sided (octagon)... As the number of sides increases, the track approaches a **circle**. On a true circular path, the direction of motion changes at every instant.",
+              "The speed of an object in uniform circular motion is given by:\n$$v = \\frac{2\\pi r}{t}$$\nwhere $r$ = radius of the circular path and $t$ = time period (time for one complete revolution).",
+              "When a stone tied to a string is released from circular motion, it flies off **tangentially** — in a straight line along the direction of its velocity at that instant. Similarly, a hammer or discus thrown by an athlete moves in the tangential direction after release. Other examples of uniform circular motion: motion of the Moon around the Earth, an artificial satellite in a circular orbit, a cyclist on a circular track at constant speed."
+            ],
+            "scq": [
+              {
+                "question": "An artificial satellite is moving in a circular orbit of radius 42250 km and takes 24 hours to complete one revolution. What is its orbital speed?",
+                "options": [
+                  { "text": "1764 m s⁻¹", "is_correct": false },
+                  { "text": "3073 m s⁻¹", "is_correct": true },
+                  { "text": "7000 m s⁻¹", "is_correct": false },
+                  { "text": "11200 m s⁻¹", "is_correct": false }
+                ],
+                "explanation": "$r = 4.225 \\times 10^7$ m; $t = 24 \\times 3600 = 86400$ s. $v = 2\\pi r/t = (2 \\times 3.14159 \\times 4.225 \\times 10^7)/86400 \\approx 3073$ m s⁻¹."
+              },
+              {
+                "question": "An athlete completes one round of a circular track of diameter 200 m in 40 s. What will be the displacement at the end of 2 minutes 20 seconds?",
+                "options": [
+                  { "text": "0 m", "is_correct": false },
+                  { "text": "100 m", "is_correct": false },
+                  { "text": "200 m", "is_correct": true },
+                  { "text": "2200 m", "is_correct": false }
+                ],
+                "explanation": "Total time = 140 s. Rounds = 140/40 = 3.5. After 3.5 rounds, the athlete is at the diametrically opposite point. Displacement = diameter = 200 m."
+              }
+            ],
+            "mcq": [
+              {
+                "question": "Which of the following are examples of uniform circular motion? (Select all that apply)",
+                "options": [
+                  { "text": "A satellite moving in a perfectly circular orbit at constant speed", "is_correct": true },
+                  { "text": "The Moon revolving around the Earth at approximately constant speed", "is_correct": true },
+                  { "text": "A cyclist moving along a straight road at constant speed", "is_correct": false },
+                  { "text": "A stone whirled in a horizontal circle at constant speed on a string", "is_correct": true }
+                ],
+                "explanation": "Uniform circular motion requires circular path + constant speed. Satellite, Moon, and whirling stone satisfy both. A cyclist on a straight road moves in a straight line — no change in direction — so it is uniform linear motion, not circular."
+              }
+            ],
+            "saq": [
+              {
+                "question": "An athlete completes one round of a circular track of diameter 200 m in 40 s. What will be the distance covered and the displacement at the end of 2 minutes 20 s?",
+                "sample_answer": "Radius $r = 100$ m; time per round = 40 s; total time = 140 s.\n\n**Rounds completed** = 140 ÷ 40 = 3.5\n\n**Distance** = $3.5 \\times 2\\pi r = 3.5 \\times 2 \\times 3.14159 \\times 100 \\approx$ **2200 m**\n\n**Displacement:** After 3.5 rounds, the athlete is at the diametrically opposite point. Displacement = diameter = **200 m** (directed from start to that opposite point)."
+              },
+              {
+                "question": "Why is uniform circular motion considered to be accelerated motion even though the speed is constant?",
+                "sample_answer": "Acceleration is defined as the rate of change of **velocity**, not speed. Velocity is a **vector** with both magnitude and direction. In uniform circular motion, the speed (magnitude of velocity) is constant, but the **direction** of velocity changes continuously at every point on the circular path. Since the velocity vector keeps changing direction, the object is accelerating. This acceleration (called **centripetal acceleration**) is always directed towards the centre of the circle."
+              },
+              {
+                "question": "An artificial satellite is moving in a circular orbit of radius 42250 km. Calculate its speed if it takes 24 hours to revolve around the Earth.",
+                "sample_answer": "Given: $r = 42250$ km $= 4.225 \\times 10^7$ m; $t = 24 \\times 3600 = 86400$ s.\n\nUsing $v = \\frac{2\\pi r}{t}$:\n$$v = \\frac{2 \\times 3.14159 \\times 4.225 \\times 10^7}{86400} = \\frac{2.653 \\times 10^8}{86400} \\approx \\mathbf{3073 \\text{ m s}^{-1} \\approx 3.07 \\text{ km s}^{-1}}$$"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
